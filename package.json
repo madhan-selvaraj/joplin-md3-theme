@@ -1,0 +1,13 @@
+{
+  "name": "joplin-md3-theme",
+  "version": "0.0.1",
+  "description": "Material You theme for Joplin",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sass index.scss userchrome.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.64.0"
+  }
+}

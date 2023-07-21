@@ -1,0 +1,46 @@
+@import "theme/tokens";
+@import "components/notelist";
+
+.rli-sideBar .sidebar {
+  background: $md-sys-color-surface-dark;
+  // width: 360px;
+
+  border-radius: 0px 16px 16px 0px;
+  > span > div {
+    z-index: 1;
+  }
+
+  & > div:nth-child(2) button {
+    background-color: $md-sys-color-surface-dark;
+    border: 1px solid $md-sys-color-outline-dark;
+    max-height: 40px;
+    height: 40px !important;
+    padding-left: 16px;
+    padding-right: 24px;
+    border-radius: 20px;
+    & span {
+      color: $md-sys-color-on-primary-dark;
+      font-size: $md-sys-typescale-label-large-font-size;
+    }
+  }
+}
+
+.list-item-container.list-item-depth-0 {
+  background-color: $md-sys-color-surface-variant-dark;
+  color: $md-sys-color-on-surface-variant-dark;
+  height: 56px;
+
+  & * {
+    font-size: $md-sys-typescale-label-large-font-size;
+    line-height: $md-sys-typescale-label-large-line-height;
+  }
+
+  &.selected {
+    background-color: $md-sys-color-secondary-container-dark;
+    color: $md-sys-color-on-secondary-container-dark;
+    border-radius: 28px;
+  }
+  .note-count-label {
+    right: 0;
+  }
+}

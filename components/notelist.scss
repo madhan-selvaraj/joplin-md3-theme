@@ -1,0 +1,43 @@
+.rli-noteList {
+  & .new-note-todo-buttons {
+    height: 60px;
+  }
+  & button.new-note-button {
+    background-color: $md-sys-color-primary-dark;
+    max-height: 40px;
+    height: 40px !important;
+    padding-left: 16px;
+    padding-right: 24px;
+    border-radius: 20px;
+    & span {
+      color: $md-sys-color-on-primary-dark;
+    }
+  }
+
+  & button.new-todo-button {
+    background-color: $md-sys-color-secondary-container-dark;
+    max-height: 40px;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 24px;
+    border: 0;
+    border-radius: 20px;
+    & span {
+      color: $md-sys-color-on-secondary-container-dark;
+    }
+  }
+
+  .search-and-sort {
+    .search-bar {
+      input {
+        outline: none;
+        border: 1px solid $md-sys-color-outline-dark;
+        border-radius: 4px;
+
+        &:focus {
+          border: 2px solid $md-sys-color-outline-dark;
+        }
+      }
+    }
+  }
+}

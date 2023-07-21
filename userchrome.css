@@ -1,0 +1,98 @@
+/* primary */
+/* secondary */
+/* tertiary */
+/* error */
+/* neutral */
+/* neutral-variant */
+/* light */
+/* dark */
+/* display - large */
+/* display - medium */
+/* display - small */
+/* headline - large */
+/* headline - medium */
+/* headline - small */
+/* body - large */
+/* body - medium */
+/* body - small */
+/* label - large */
+/* label - medium */
+/* label - small */
+/* title - large */
+/* title - medium */
+/* title - small */
+.rli-noteList .new-note-todo-buttons {
+  height: 60px;
+}
+.rli-noteList button.new-note-button {
+  background-color: #d0bcff;
+  max-height: 40px;
+  height: 40px !important;
+  padding-left: 16px;
+  padding-right: 24px;
+  border-radius: 20px;
+}
+.rli-noteList button.new-note-button span {
+  color: #381e72;
+}
+.rli-noteList button.new-todo-button {
+  background-color: #4a4458;
+  max-height: 40px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 24px;
+  border: 0;
+  border-radius: 20px;
+}
+.rli-noteList button.new-todo-button span {
+  color: #e8def8;
+}
+.rli-noteList .search-and-sort .search-bar input {
+  outline: none;
+  border: 1px solid #938f99;
+  border-radius: 4px;
+}
+.rli-noteList .search-and-sort .search-bar input:focus {
+  border: 2px solid #938f99;
+}
+
+.rli-sideBar .sidebar {
+  background: #1c1b1f;
+  border-radius: 0px 16px 16px 0px;
+}
+.rli-sideBar .sidebar > span > div {
+  z-index: 1;
+}
+.rli-sideBar .sidebar > div:nth-child(2) button {
+  background-color: #1c1b1f;
+  border: 1px solid #938f99;
+  max-height: 40px;
+  height: 40px !important;
+  padding-left: 16px;
+  padding-right: 24px;
+  border-radius: 20px;
+}
+.rli-sideBar .sidebar > div:nth-child(2) button span {
+  color: #381e72;
+  font-size: 14px;
+}
+
+.list-item-container.list-item-depth-0 {
+  background-color: #49454f;
+  color: #cac4d0;
+  height: 56px;
+}
+.list-item-container.list-item-depth-0 * {
+  font-size: 14px;
+  line-height: 20px;
+}
+.list-item-container.list-item-depth-0.selected {
+  background-color: #4a4458;
+  color: #e8def8;
+  border-radius: 28px;
+}
+.list-item-container.list-item-depth-0 .note-count-label {
+  right: 0;
+}
+
+/*# sourceMappingURL=userchrome.css.map */
