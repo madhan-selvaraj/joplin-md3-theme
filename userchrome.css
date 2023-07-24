@@ -55,13 +55,44 @@
 .rli-noteList .search-and-sort .search-bar input:focus {
   border: 2px solid #938f99;
 }
+.rli-noteList .note-list-item {
+  height: 44px;
+  background-color: #1c1b1f;
+  border-bottom: 1px solid #49454f;
+}
+.rli-noteList .note-list-item::before {
+  all: unset;
+}
+.rli-noteList .note-list-item:hover {
+  background-color: #e6e1e511;
+}
+.rli-noteList .note-list-item.selected {
+  background-color: #e6e1e544;
+}
+.rli-noteList .note-list-item a span {
+  color: #e6e1e5;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
 
 .rli-sideBar .sidebar {
   background: #1c1b1f;
+  padding: 0 12px;
   border-radius: 0px 16px 16px 0px;
 }
-.rli-sideBar .sidebar > span > div {
-  z-index: 1;
+.rli-sideBar .sidebar div:first-child > div:nth-child(odd) i {
+  display: none;
+}
+.rli-sideBar .sidebar div:first-child > div:nth-child(odd) > div span {
+  color: #cac4d0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.rli-sideBar .sidebar .folders {
+  border-bottom: 1px solid #938f99;
 }
 .rli-sideBar .sidebar > div:nth-child(2) button {
   background-color: #1c1b1f;
@@ -76,23 +107,48 @@
   color: #381e72;
   font-size: 14px;
 }
-
-.list-item-container.list-item-depth-0 {
-  background-color: #49454f;
+.rli-sideBar .sidebar .list-item-container {
+  background-color: #1c1b1f;
   color: #cac4d0;
-  height: 56px;
+  height: 44px;
+  border-radius: 28px;
+  padding-left: 16px;
+  padding-right: 24px;
 }
-.list-item-container.list-item-depth-0 * {
+.rli-sideBar .sidebar .list-item-container:hover {
+  background-color: #cac4d014;
+}
+.rli-sideBar .sidebar .list-item-container:active {
+  background-color: #cac4d01f;
+}
+.rli-sideBar .sidebar .list-item-container a:first-child {
+  display: none;
+}
+.rli-sideBar .sidebar .list-item-container a:nth-child(2) > div:first-child,
+.rli-sideBar .sidebar .list-item-container i.icon-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+.rli-sideBar .sidebar .list-item-container .emoji-box {
+  width: 24px !important;
+  height: 24px !important;
+}
+.rli-sideBar .sidebar .list-item-container * {
   font-size: 14px;
   line-height: 20px;
 }
-.list-item-container.list-item-depth-0.selected {
+.rli-sideBar .sidebar .list-item-container.selected {
   background-color: #4a4458;
   color: #e8def8;
-  border-radius: 28px;
 }
-.list-item-container.list-item-depth-0 .note-count-label {
-  right: 0;
+.rli-sideBar .sidebar .list-item-container .note-count-label {
+  position: absolute;
+  right: 36px;
+  color: #e8def8;
 }
 
 /*# sourceMappingURL=userchrome.css.map */

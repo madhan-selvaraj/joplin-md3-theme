@@ -40,4 +40,34 @@
       }
     }
   }
+
+  .note-list-item {
+    // height: 56px;
+    height: 44px;
+    background-color: $md-sys-color-surface-dark;
+    border-bottom: 1px solid $md-sys-color-surface-variant-dark;
+
+    &::before {
+      all: unset;
+      //   left: 0;
+      //   width: 100%;
+      //   border: 1px solid $md-sys-color-surface-variant-dark;
+    }
+
+    &:hover {
+      background-color: #{$md-sys-color-on-surface-dark}11;
+    }
+
+    &.selected {
+      background-color: #{$md-sys-color-on-surface-dark}44;
+    }
+
+    a span {
+      color: $md-sys-color-on-surface-dark;
+      font-size: $md-sys-typescale-body-large-font-size;
+      font-weight: $md-sys-typescale-body-large-font-weight;
+      line-height: $md-sys-typescale-body-large-line-height;
+      letter-spacing: $md-sys-typescale-body-large-letter-spacing;
+    }
+  }
 }

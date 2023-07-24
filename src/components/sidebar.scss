@@ -1,0 +1,96 @@
+.rli-sideBar .sidebar {
+  background: $md-sys-color-surface-dark;
+  padding: 0 12px;
+  // width: 360px;
+
+  border-radius: 0px 16px 16px 0px;
+
+  // Sub headings - Notebooks, Tags
+  & div:first-child > div:nth-child(odd) {
+    i {
+      display: none;
+    }
+    & > div span {
+      color: $md-sys-color-on-surface-variant-dark;
+      font-size: $md-sys-typescale-title-small-font-size;
+      line-height: $md-sys-typescale-title-small-line-height;
+      font-weight: 500;
+    }
+  }
+
+  .folders {
+    border-bottom: 1px solid $md-sys-color-outline-dark;
+  }
+
+  & > div:nth-child(2) button {
+    background-color: $md-sys-color-surface-dark;
+    border: 1px solid $md-sys-color-outline-dark;
+    max-height: 40px;
+    height: 40px !important;
+    padding-left: 16px;
+    padding-right: 24px;
+    border-radius: 20px;
+    & span {
+      color: $md-sys-color-on-primary-dark;
+      font-size: $md-sys-typescale-label-large-font-size;
+    }
+  }
+
+  .list-item-container {
+    background-color: $md-sys-color-surface-dark;
+    color: $md-sys-color-on-surface-variant-dark;
+    // height: 56px;
+    height: 44px;
+    border-radius: 28px;
+    padding-left: 16px;
+    padding-right: 24px;
+
+    &:hover {
+      background-color: #{$md-sys-color-on-surface-variant-dark}#{$hover-opacity};
+    }
+
+    &:active {
+      background-color: #{$md-sys-color-on-surface-variant-dark}#{$active-opacity};
+    }
+
+    // Hide empty placeholder space
+    a:first-child {
+      display: none;
+    }
+
+    // Drawer Icons
+    a:nth-child(2) > div:first-child,
+    i.icon-notes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px !important;
+      width: 24px !important;
+      height: 24px !important;
+    }
+
+    // Drawer Icons
+    .emoji-box {
+      width: 24px !important;
+      height: 24px !important;
+    }
+
+    & * {
+      font-size: $md-sys-typescale-label-large-font-size;
+      line-height: $md-sys-typescale-label-large-line-height;
+    }
+
+    // Active notebook
+    &.selected {
+      background-color: $md-sys-color-secondary-container-dark;
+      color: $md-sys-color-on-secondary-container-dark;
+    }
+
+    // Notes count
+    .note-count-label {
+      position: absolute;
+      right: 36px;
+      color: $md-sys-color-on-secondary-container-dark;
+    }
+  }
+}
